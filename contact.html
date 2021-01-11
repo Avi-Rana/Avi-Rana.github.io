@@ -16,6 +16,12 @@ font-family:calibri;
     height: 100%;
     margin:25px;
 }
+#title{
+    font-family: 'Hammersmith One', sans-serif;
+font-size: 50px;
+color:White;
+margin-left: 5px;
+}
 body{
     background-color: #282828;
         font-family:calibri;
@@ -25,9 +31,6 @@ body{
 }
 header{
     margin-top: 0px;
-font-family:calibri;
-font-size: 50px;
-color:white;
 padding-top: 0px;
 background-color:#3500D3;
 }
@@ -71,9 +74,10 @@ footer{
         background-color:#240090;
         padding: 25px;
     }
-.heading{
+.page_heading{
         font-size: 45px;
         font-family: 'Hammersmith One', sans-serif;
+        text-decoration: underline;
     }
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.15.0/d3.min.js"></script>
@@ -88,10 +92,10 @@ footer{
         <li><a href="stuff.html"><b>Stuff</b></a></li>
     </ul>
 <header>
-    <img src="logo.png" width="115" onclick="window.location.href ='index.html';">
+    <span id="title">Avi</span>
 </header>
 <div id="main">
-    <h1 class ="heading"><b>About</b></h1>
+    <h1 class ="page_heading"><b>About</b></h1>
     <br>
     <img src="https://logos-world.net/wp-content/uploads/2020/04/Twitter-Logo.png" alt="twitter" width="45">
     <button id="discord" onclick="window.location.href ='https://twitter.com/_AviRana';"><b>Twitter</b></button>

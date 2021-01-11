@@ -15,6 +15,12 @@ font-family:calibri;
     height: 100%;
     margin:25px;
 }
+#title{
+    font-family: 'Hammersmith One', sans-serif;
+font-size: 50px;
+color:White;
+margin-left: 5px;
+}
 body{
     background-color: #282828;
         font-family:calibri;
@@ -24,9 +30,6 @@ body{
 }
 header{
     margin-top: 0px;
-font-family:calibri;
-font-size: 50px;
-color:White;
 padding-top: 0px;
 background-color:#3500D3;
 }
@@ -57,9 +60,10 @@ footer{
         background-color:#240090;
         padding: 25px;
     }
-    .heading{
+.page_heading{
         font-size: 45px;
         font-family: 'Hammersmith One', sans-serif;
+        text-decoration: underline;
     }
 .item{
 border-radius: 10px;
@@ -94,13 +98,13 @@ color:black;
     <!--PAGE HEAD-->
     <!--TITLE-->
 <header>
-    <img src="logo.png" width="80" onclick="window.location.href ='index.html';">
+   <span id="title">Avi</span>
 </header>
 <!--/TITLE-->
 
 <!--/PAGE HEAD-->
 <div id="main">
-    <h1 class ="heading">Stuff!</h1>
+    <h1 class ="page_heading">Stuff!</h1>
   <div class ="item">
 <h1 class="item_head">News Station 17</h1>
 <h3 class="item_desc">Weekly news for the 17yr old weeb</h3>
