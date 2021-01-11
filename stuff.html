@@ -6,6 +6,8 @@
       type="image/png"
       href="logo.png">
 </link>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
 <style>
 #main{
 font-family:calibri;
@@ -56,13 +58,25 @@ footer{
         padding: 25px;
     }
     .heading{
-        font-size: 50px;
+        font-size: 45px;
+        font-family: 'Hammersmith One', sans-serif;
     }
 .item{
-border-raidus: 30px;
+border-radius: 10px;
 padding:20px;
 background-color:#FFFFFF;
 color:black;
+}
+.item_head{
+    margin: 5px;
+    padding: 0px;
+}
+.item_desc{
+    margin: 5px;
+    padding: 0px;
+}
+.item_btn{
+  
 }
 
 </style>
@@ -73,31 +87,31 @@ color:black;
 <body>
 <!--NAVBAR-->
     <ul>
-        <li><a href="stuff.html"><b>Stuff!</b></a></li>
-        <li><a href="contact.html"><b>Contact</b></a></li>
+        <li><a href="contact.html"><b>About</b></a></li>
+        <li><a href="stuff.html"><b>Stuff</b></a></li>
     </ul>
     <!--/NAVBAR-->
     <!--PAGE HEAD-->
     <!--TITLE-->
 <header>
-    <img src="logo.png" width="80" onclick="window.location.href ='https://avi-rana.github.io/';">
+    <img src="logo.png" width="80" onclick="window.location.href ='index.html';">
 </header>
 <!--/TITLE-->
 
 <!--/PAGE HEAD-->
 <div id="main">
-    <h1 class ="heading"><b>Stuff!</b></h1>
-  <div class="item">
-<h1>News Station 17</h1>
-<h3>Weekly news for the 17yr old weeb</h3>
-<a href="https://avi-rana-1718.github.io/News-Station-17/">Click Here</a>
+    <h1 class ="heading">Stuff!</h1>
+  <div class ="item">
+<h1 class="item_head">News Station 17</h1>
+<h3 class="item_desc">Weekly news for the 17yr old weeb</h3>
+<button class="item_btn" onclick="window.location.href ='https://avi-rana-1718.github.io/News-Station-17/';"><b>Open</b></button>
 </div>
 </div>
 <!--FOOTER-->
 <footer><b>@Avi Rana</b>
 <ul>
-    <li><a href="stuff.html"><b>Stuff</b></a></li>
-    <li><a href="contact.html"><b>Contact</b></a></li>
+    <li><a href="contact.html"><b>About</b></a></li>
+        <li><a href="stuff.html"><b>Stuff</b></a></li>
 </ul>
 </footer>
 <!--/FOOTER-->
