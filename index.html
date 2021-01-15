@@ -36,12 +36,12 @@ header{
 padding-top: 0px;
 background-color:#3500D3;
 }
-ul{
+.nav_ul{
     list-style-type: none;
     float: right;
     text-align: center;
 }
-li{
+.nav_item{
     float: right;
     margin: 3px;
       border-radius: 6px;
@@ -59,6 +59,22 @@ div{
     margin:15px;
     padding:25px;
 }
+#blog_outer{
+    float: left;
+    padding: 0px;
+    margin: 0px;
+width: 250px;
+}
+#blog{
+    background-color: white;
+    color: black;
+    padding:5px;
+    margin: 0px;
+    border-radius: 5px;
+}
+.twitter-timeline{
+    margin-left: 8px;
+}
 footer{
         background-color:#240090;
         padding: 25px;
@@ -70,9 +86,9 @@ footer{
 </head>
 <body>
 <!--NAVBAR-->
-    <ul>
-        <li><a href="contact.html"><b>About</b></a></li>
-        <li><a href="stuff.html"><b>Stuff</b></a></li>
+    <ul class="nav_ul">
+        <li class ="nav_item"><a href="contact.html"><b>About</b></a></li>
+        <li class ="nav_item"><a href="stuff.html"><b>Stuff</b></a></li>
     </ul>
     <!--/NAVBAR-->
     <!--PAGE HEAD-->
@@ -89,16 +105,37 @@ I am a 16 year old kid who likes making stuff and watching anime.
 I assume that you were very bored cuz you opened this website or you were forced to do so.
 <br>
 <br>
+<!--Posts-->
+<div id="blog_outer">
+    <b>></b>Post's
+    <div id="blog">
+        <ul>
+            <li><b><u>New Website!</u></b>
+            <br>
+        New Station 17<br>
+    </li>
+        <li><b><u>Stuff to replace!</u></b>
+            <br>
+        More stuff to replace<br>
+    </li>
+        <li><b><u>Stuff to replace!</u></b>
+            <br>
+        More stuff to replace<br>
+    </li>
+        </ul>
+    </div>
+</div>
 <!--Twitter Feed-->
-<b>></b>Twitter Feed
+<b>></b>Twitter Timeline
 <br>
 <a class="twitter-timeline" data-width="250" data-theme="light" href="https://twitter.com/_AviRana?ref_src=twsrc%5Etfw">Tweets by _AviRana</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
+
 <!--FOOTER-->
 <footer><b>@Avi Rana</b>
-<ul>
-    <li><a href="contact.html"><b>About</b></a></li>
-        <li><a href="stuff.html"><b>Stuff</b></a></li>
+<ul class="nav_ul">
+    <li class="nav_item"><a href="contact.html"><b>About</b></a></li>
+        <li class="nav_item"><a href="stuff.html"><b>Stuff</b></a></li>
 </ul>
 </footer>
 <!--/FOOTER-->
