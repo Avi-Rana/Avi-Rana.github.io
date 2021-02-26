@@ -2,30 +2,99 @@
 <head>
 <title>Anime_Soap | My Hero Academia</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!--BODY FONT-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
-<body>
-<h1>Anime_Soap</h1>
-<button onclick="ep('1')">Episode1</button>
-<button onclick="ep('2')">Episode2</button>
-ep
-<span id ="epnumber"></span>
-<span id ="vidsrc"></span>
-
+<style>
+    body{
+        background-color: #282828;
+        color:white;
+        padding:10px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    button{
+        color:white;
+        padding:3px;
+        background-color: #3500D4;
+        border-color: rgba(0,0,0,0.3);
+        border-radius: 2px;
+        border: none;
+        margin: 2px;
+    }
+    #player_div{
+        margin-top: 5px;
+        padding:3px;
+        background-color:#ffffff;
+        color: black;
+        border-radius: 2px;
+        }
+        #player{
+            visibility: hidden;
+        }
+        #info{
+            margin: 15px;
+        }
+        .season_select{
+            background-color: #282828;
+            font-size: 18px;
+            text-decoration: Bold;
+        }
+        
+</style>
 <script>
+function season(num){
+    document.getElementById("snumber").innerHTML = num;
+}
 function ep(num) {
    if(num == 1) {
-    var src = "https://storage.googleapis.com/storied-shell-303815/NR8_L2LEHLGX/23a_1614233059_73329.mp4";
+    var src = "https://storage.googleapis.com/bionic-run-303112/5PCVPGPGQ3YG/23a_1614284260_73329.mp4";
 } else if (num == 2) {
-    var src = "https://storage.googleapis.com/storied-shell-303815/ENA8BBYOUEDI/23a_1614233424_73330.mp4";
+    var src = "https://storage.googleapis.com/lexical-bit-302900/1IO4OQC9DOLD/22a_1614282638_73330.mp4";
 }
+document.getElementById("player").style.visibility = "visible";
 document.getElementById("epnumber").innerHTML = num;
 document.getElementById("player").src = src;
 }
 </script>
+<body>
+<h1>Anime_Soap</h1>
+<button class = "season_select" onclick= "season ('1')">Season 1</button>
+<br>
+<button onclick="ep('1')">Episode 01</button>
+<button onclick="ep('2')">Episode 02</button>
+<button onclick="ep('3')">Episode 03</button>
+<button onclick="ep('4')">Episode 04</button>
+<button onclick="ep('5')">Episode 05</button>
+<button onclick="ep('6')">Episode 06</button>
+<button onclick="ep('7')">Episode 07</button>
+<button onclick="ep('8')">Episode 08</button>
+<button onclick="ep('9')">Episode 09</button>
+<button onclick="ep('10')">Episode 10</button>
+<button onclick="ep('11')">Episode 11</button>
+<button onclick="ep('12')">Episode 12</button>
+<button onclick="ep('13')">Episode 13</button>
 
-<video id = "player" width="480" height="320" controls="controls" autoplay="autoplay">
+<br>
+<div id = "player_div">
+<video id = "player" width="100%" height= "auto" controls="controls" autoplay="autoplay">
   <source src="vidsrc" type="video/mp4">
  </video>
-
+ <div id = "info">
+     My Hero Academia/Boku no hero <br>
+     Season 
+<span id ="snumber"></span>
+     <br>
+     EP
+<span id ="epnumber"></span>
+<span id ="vidsrc"></span>
+ </div>
+</div>
+<br>
+<div class="alert alert-danger">
+    <strong>NOTE</strong> Please don't share this website with anyone , this website is kinda illegal.
+  </div>
+  <h6>@Avi Rana</h6>
 </body>
 </html>
