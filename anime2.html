@@ -1,0 +1,58 @@
+<?php
+session_start();
+?>
+<html>
+<head>
+<title>Manga_Soap</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!--BODY FONT-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<style>
+    body{
+        background-color: #282828;
+        color:white;
+        padding:10px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    #info{
+        margin-top: 5px;
+        padding:10px;
+        background-color:#ffffff;
+        color: black;
+        border-radius: 2px;
+        }
+        #manga_img{
+            width: 100%;
+            margin-right:15px;
+            margin-bottom:5px;
+            margin-left:0px;
+            margin-top: 10px;
+            padding-left: 0px;
+            
+            padding:3px;
+        }
+</style>
+<body>
+<h1>Manga_Soap</h1>
+<br>
+<?php
+// Echo session variables that were set on previous page
+echo "Manga" . $_SESSION["mname"] . ".";
+?>
+ <div id = "info">
+     My Hero Academia/Boku no hero <br>
+     Volume 1
+<span id ="epnumber"></span>
+<br>
+By Nico
+ </div>
+<div>
+    <img id = "manga_img"src = "https://dw9to29mmj727.cloudfront.net/products/1974719774.jpg">
+    </div>
+<br>
+  <h6>@Avi Rana</h6>
+</body>
+</html>
